@@ -5,8 +5,10 @@ const {
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    "application-a": "http://localhost:4202/remoteEntry.js",
-    "application-b": "http://localhost:4203/remoteEntry.js",
+    "application-a":
+      "https://angular-workspace-application-a.vercel.app/remoteEntry.js",
+    "application-b":
+      "https://angular-workspace-application-b.vercel.app/remoteEntry.js",
   },
 
   shared: {
