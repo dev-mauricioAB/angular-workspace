@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/mfe1', pathMatch: 'full' },
+  { path: '', redirectTo: '/application-a', pathMatch: 'full' },
   {
-    path: 'mfe1',
-    loadChildren: () => import('./pages/home/home.module').then(({ Mfe1Module }) => Mfe1Module)
+    path: 'application-a',
+    loadChildren: () => import('./pages/home/home.module').then(({ ApplicationAModule }) => ApplicationAModule)
   }
 ];
 

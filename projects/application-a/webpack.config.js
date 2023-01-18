@@ -4,10 +4,11 @@ const {
 } = require("@angular-architects/module-federation/webpack");
 
 module.exports = withModuleFederationPlugin({
-  name: "mfe1",
+  name: "application-a",
 
   exposes: {
-    "./Mfe1Module": "./projects/mfe1/src/app/pages/home/home.module.ts",
+    "./ApplicationAModule":
+      "./projects/application-a/src/app/pages/home/home.module.ts",
   },
 
   shared: {

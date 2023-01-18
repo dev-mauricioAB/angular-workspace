@@ -3,8 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'mfe1',
-    loadChildren: () => import('mfe1/Mfe1Module').then(({ Mfe1Module }) => Mfe1Module)
+    path: 'application-a',
+    loadChildren: () => import('application-a/ApplicationAModule').then(({ ApplicationAModule }) => ApplicationAModule)
+  },
+  {
+    path: 'application-b',
+    loadChildren: () => import('application-b/ApplicationBModule').then(({ ApplicationBModule }) => ApplicationBModule)
   },
 ];
 

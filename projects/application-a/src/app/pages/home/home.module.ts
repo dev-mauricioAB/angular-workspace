@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,4 +19,4 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [HomeComponent]
 })
-export class Mfe1Module { }
+export class ApplicationAModule { }
