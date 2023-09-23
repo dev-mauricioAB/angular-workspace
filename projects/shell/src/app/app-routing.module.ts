@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'application-a',
+    path: '',
+    redirectTo: 'app-a',
+    pathMatch: 'full'
+  },
+  {
+    path: 'app-a',
     loadChildren: () => import('application-a/ApplicationAModule').then(({ ApplicationAModule }) => ApplicationAModule)
   },
   {
-    path: 'application-b',
+    path: 'app-b',
     loadChildren: () => import('application-b/ApplicationBModule').then(({ ApplicationBModule }) => ApplicationBModule)
   },
 ];
