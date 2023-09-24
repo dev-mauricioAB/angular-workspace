@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnvironmentService } from './services/environment.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shell';
+
+  isLoading = true;
+
+  constructor(private environmentService: EnvironmentService) {
+    this.environmentService.canActivate()
+      .then(() => {
+        this.isLoading = false;
+      })
+  }
 }
