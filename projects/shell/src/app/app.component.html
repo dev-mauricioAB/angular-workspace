@@ -1,5 +1,17 @@
-<div *ngIf="isLoading">
-  Loading manifest ...
-</div>
+<div class="z-mat-elevation-z8 main-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Title</mat-card-title>
+      <mat-card-subtitle>Subtitle</mat-card-subtitle>
+    </mat-card-header>
 
-<router-outlet></router-outlet>
+    <mat-card-content>
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+      <router-outlet></router-outlet>
+    </mat-card-content>
+
+    <mat-card-footer>
+      Footer
+    </mat-card-footer>
+  </mat-card>
+</div>
