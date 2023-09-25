@@ -104,6 +104,17 @@
             "styles": ["projects/shell/src/styles.scss"],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/shell/src/*.ts",
+              "projects/shell/src/**/*.ts",
+              "projects/shell/src/*.html",
+              "projects/shell/src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -208,6 +219,17 @@
             "styles": ["projects/application-a/src/styles.scss"],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/application-a/src/*.ts",
+              "projects/application-a/src/**/*.ts",
+              "projects/application-a/src/*.html",
+              "projects/application-a/src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -311,6 +333,17 @@
             ],
             "styles": ["projects/application-b/src/styles.scss"],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/application-b/src/*.ts",
+              "projects/application-b/src/**/*.ts",
+              "projects/application-b/src/*.html",
+              "projects/application-b/src/**/*.html"
+            ]
           }
         }
       }
