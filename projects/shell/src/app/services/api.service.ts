@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
 
-import { Observable } from 'rxjs'
+import { Observable } from 'rxjs';
 
-import { environment } from '../../environments/environment'
+import { environment } from '../../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
   apiBaseUrl = '';
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
   ) {
-    this.apiBaseUrl = environment.apiBaseUrl
+    this.apiBaseUrl = environment.apiBaseUrl;
   }
 
   getAllModules(): Observable<any> {
-    return this.http.get(`${this.apiBaseUrl}/manifest`)
+    return this.http.get(`${this.apiBaseUrl}/manifest`);
   }
 }

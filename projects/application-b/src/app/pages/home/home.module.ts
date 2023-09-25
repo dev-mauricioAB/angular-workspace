@@ -6,19 +6,19 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
         path: '',
-        component: HomeComponent
-      }
-    ])
+        component: HomeComponent,
+      },
+    ]),
   ],
   exports: [
-    HomeComponent
-  ]
+    HomeComponent,
+  ],
 })
 export class ApplicationBModule { }

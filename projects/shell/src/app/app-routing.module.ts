@@ -6,21 +6,21 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'app-a',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'app-a',
     loadChildren: () => import('application-a/ApplicationAModule').then(({ ApplicationAModule }) => ApplicationAModule),
-    canActivate: [environmentGuard]
+    canActivate: [environmentGuard],
   },
   {
     path: 'app-b',
-    loadChildren: () => import('application-b/ApplicationBModule').then(({ ApplicationBModule }) => ApplicationBModule)
+    loadChildren: () => import('application-b/ApplicationBModule').then(({ ApplicationBModule }) => ApplicationBModule),
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
